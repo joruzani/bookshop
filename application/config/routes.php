@@ -38,8 +38,10 @@
 |
 */
 
+$route['catalog/create'] = 'catalog/create';
 $route['default_controller'] = "home";
 $route['404_override'] = '';
+//$route['catalog/(:any)'] = 'catalog/edit/$1';
 
 
 /* End of file routes.php */

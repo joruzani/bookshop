@@ -12,6 +12,7 @@
 
     <!-- Bootstrap Core CSS -->
     <?php	echo link_tag('assets/css/bootstrap.min.css'); ?>
+    <?php	echo link_tag('assets/css/sidebar.css'); ?>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Custom CSS -->

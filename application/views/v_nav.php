@@ -14,14 +14,14 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li>
-                    <a href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
+            <li <?php if($this->uri->uri_string() == ''){ echo 'class="active"';}?>>
+                    <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
                 </li>
-                <li>
-                    <a href="#"><span class="glyphicon glyphicon-search"></span> Browse Catalog</a>
+                <li <?php if($this->uri->uri_string() == 'catalog'){ echo 'class="active"';}?>>
+                    <a href="/index.php/catalog"><span class="glyphicon glyphicon-search"></span> Browse Catalog</a>
                 </li>
-                <li>
-                    <a href="#"><span class="glyphicon glyphicon-plus"></span> Add Book</a>
+                <li <?php if($this->uri->uri_string() == 'catalog/create'){ echo 'class="active"';}?>>
+                    <a href="/index.php/catalog/create"><span class="glyphicon glyphicon-plus"></span> Add Book</a>
                 </li>
             </ul>
         </div>
@@ -31,4 +31,4 @@
 </nav>
 
 <!-- Page Content -->
-<div class="container">
+<div class="container fluid" id="demo">
